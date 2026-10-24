@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://xn--nsr30bl8nb2kyt7a8vs.top/sitemap.xml
