@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="嗷呜接口解密工具">
+  <title>全能接口解密 - 嗷呜导航</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="decrypt-shell">
+    <header class="decrypt-hero">
+      <h1>嗷呜TVBox 接口解密</h1>
+    </header>
+
+    <section class="decrypt-panel" aria-label="接口解密工具">
+      <form class="decrypt-form" id="decryptForm">
+        <label class="sr-only" for="apiUrl">接口地址</label>
+        <input id="apiUrl" name="url" type="url" placeholder="输入接口地址，没地址？点击下方主页" autocomplete="url" required>
+        <button type="submit" id="decryptButton">解密</button>
+      </form>
+
+      <textarea id="resultBox" spellcheck="false" placeholder="解密结果会显示在这里" readonly></textarea>
+
+      <div class="actions">
+        <a class="action action-primary" href="../">主页</a>
+        <button class="action action-warn" type="button" id="copyButton">复制</button>
+        <button class="action action-muted" type="button" id="clearButton">清空</button>
+        <a class="action action-danger" href="https://t.me/awnnnnnnnnnnnnnnnn" target="_blank" rel="noopener noreferrer">防失联</a>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="./script.js"></script>
+</body>
+</html>
